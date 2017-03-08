@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../../../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="dealerApp">
+    <div>
+
+
+    </div>
+
+    <div ng-controller="loadDrylogsController" class="container" >
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <td>No.</td>
+                    <td>Outlet No</td>                    
+                    <td>SOC Name </td>
+                    <td>Product Name</td>
+                    <td>Tank Name</td>
+                    <td>Dealer Name</td>
+                    <td>Date Dry From</td>
+                    <td>Date Dry To</td>
+                    <td>Status</td>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr dir-paginate="item in StandingDryLogsItems | itemsPerPage: 20" current-page="pagination.current" >                   
+                    <td>{{item.OutletNo}}</td>
+                    <td>{{item.SOCName}}</td>
+                    <td>{{item.ProductName}}</td>
+                    <td>{{item.TankName}}</td>
+                    <td>{{item.DealerName}}</td>
+                    <td>{{item.DateDryFrom}}</td>
+                    <td>{{item.DateDryTo}}</td>
+                    <td>{{item.IDRequestStatus}}</td>
+
+                </tr>
+
+            
+        </table>     
+        <span><dir-pagination-controls></dir-pagination-controls></span>
+    </div>
+ 
+ 
+</body>
+</html>
+<!--<script src="../../../bootstrap.js"></script>
+<script src="/Scripts/angular.js"></script>
+<script src="/Scripts/App/app.js"></script>
+<script src="/Scripts/App/Services/StandingDryLog/StandingDryStockService.js"></script>
+<script src="/Scripts/App/Controllers/StandingDryStock/CreateStandingDryLogs.js"></script>
+<script src="/Scripts/dirPagination.js"></script>-->

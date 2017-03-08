@@ -1,0 +1,66 @@
+﻿
+    <table class="table">       
+        <tbody>
+            <tr>
+                <td>User</td>
+                <td><input type="text" id="User" name="User" value="" placeholder="User" class="form-control" ng-model="user"></td>
+                <td>Tank</td>
+                <td><input type="text" id="Tank" name="Tank" value="" placeholder="Tank" class="form-control" ng-model="tank"></td>
+            </tr>
+            <tr>
+                <td>SOC</td>
+                <td><input type="text" id="SOC" name="SOC" value="" placeholder="SOC" class="form-control" ng-model="SOC"></td>
+                <td>Product</td>
+                <td><input type="text" id="RequestStatus" name="RequestStatus" value="" placeholder="" class="form-control" ng-model="requeststatus"></td>
+            </tr>
+            <tr>
+                <td>Outlet No</td>
+                <td><input type="text" id="OutletNo" name="OutletNo" value="" placeholder="" class="form-control" ng-model="outletno"></td>
+                <td>Dry Date From</td>
+                <td>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="date_added"></label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input id="DryDateFrom" type="text" class="form-control" value="03/04/2014" ng-model="drydatefrom">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Dry Date To</td>
+                <td>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="date_modified"></label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input id="DryDateTo" type="text" class="form-control" value="03/06/2014" ng-model="drydateto">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>Amount</td>
+                <td>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="amount"></label>
+                            <input type="text" id="amount" name="amount" value="" placeholder="Amount" class="form-control" ng-model="amount">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="amount"></label>
+                            <input type="button"  value="Search" class="btn  btn-primary" ng-click="searchStandingDry()">
+                        </div>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>      
+    </table>
